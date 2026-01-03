@@ -1,0 +1,8 @@
+//
+// Created by 13041 on 2025/12/25.
+//
+
+#ifndef MYCOMPILER_ASTNODE_H
+#define MYCOMPILER_ASTNODE_H
+
+#endif //MYCOMPILER_ASTNODE_H
