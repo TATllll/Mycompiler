@@ -67,6 +67,12 @@ build CMakeFiles/myCompiler.dir/src/parse/Parser.cpp.obj: CXX_COMPILER__myCompil
   OBJECT_DIR = CMakeFiles\myCompiler.dir
   OBJECT_FILE_DIR = CMakeFiles\myCompiler.dir\src\parse
 
+build CMakeFiles/myCompiler.dir/test/parse/lexer_test.cpp.obj: CXX_COMPILER__myCompiler_unscanned_Debug D$:/desktop/bc/Compiler/myCompiler/test/parse/lexer_test.cpp || cmake_object_order_depends_target_myCompiler
+  DEP_FILE = CMakeFiles\myCompiler.dir\test\parse\lexer_test.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\myCompiler.dir
+  OBJECT_FILE_DIR = CMakeFiles\myCompiler.dir\test\parse
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target myCompiler
@@ -75,7 +81,7 @@ build CMakeFiles/myCompiler.dir/src/parse/Parser.cpp.obj: CXX_COMPILER__myCompil
 #############################################
 # Link the executable myCompiler.exe
 
-build myCompiler.exe: CXX_EXECUTABLE_LINKER__myCompiler_Debug CMakeFiles/myCompiler.dir/src/parse/Type.cpp.obj CMakeFiles/myCompiler.dir/src/parse/Lexer.cpp.obj CMakeFiles/myCompiler.dir/src/parse/Parser.cpp.obj
+build myCompiler.exe: CXX_EXECUTABLE_LINKER__myCompiler_Debug CMakeFiles/myCompiler.dir/src/parse/Type.cpp.obj CMakeFiles/myCompiler.dir/src/parse/Lexer.cpp.obj CMakeFiles/myCompiler.dir/src/parse/Parser.cpp.obj CMakeFiles/myCompiler.dir/test/parse/lexer_test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\myCompiler.dir

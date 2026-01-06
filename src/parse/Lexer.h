@@ -35,28 +35,26 @@ namespace sys {
             End
         } type;
 
-        union{
-            int vi;
-            float vf;
-            char *vs;
-        };
+        int vi;
+        float vf;
+        std::string vs;
 
         Token(Type t) : type(t) {}
         Token(int i) : type(Type::LInt), vi(i){}
         Token(float f) : type(Type::LFloat), vf(f){}
         Token(const std::string &str) : type(Type::Ident) {
-            std::strcpy(vs, str.c_str());
+            vs = str;
         }
 
     };
 
-    class Lexer{
+    class lexer_test{
         std::string input;
-        size_t loc; // 当前位置
-        size_t locLine;//当前行数
+        int loc; // 当前位置
+        int locLine;//当前行数
 
     public:
-        Lexer(std::string in) : input(std::move(in)){
+        lexer_test(std::string in) : input(std::move(in)){
             loc = 0, locLine = 1;
         }
 

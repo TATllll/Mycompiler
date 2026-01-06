@@ -11,4 +11,5 @@ add_executable(myCompiler
         src/parse/TypeContext.h
         src/parse/Type.cpp
         src/parse/Lexer.cpp
-        src/parse/Parser.cpp)
+        src/parse/Parser.cpp
+        test/parse/lexer_test.cpp)
